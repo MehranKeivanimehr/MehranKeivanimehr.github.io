@@ -1,4 +1,77 @@
-# Research projects. Fields: title, area, description, tags, links (label + url).
+# Projects, shown in this order on /projects/.
+# Fields: title, area, status (optional, e.g. "In progress"), description, tags,
+#         links (label + url; add `icon: github` for code links).
+
+- title: "NCCL Energy Frontier"
+  area: "AI infrastructure · GPU energy"
+  description: >-
+    A pilot characterization study asking whether the NCCL settings that minimize
+    collective-communication latency also minimize GPU energy. It sweeps AllReduce, AllGather, and
+    ReduceScatter from 1 KiB to 1 GiB across Ring/Tree algorithms and Simple/LL/LL128 protocols on
+    2- and 4-GPU RTX A6000 topologies, measuring per-operation board energy with NVML over 3,528
+    timed launches. In one 4-GPU AllReduce case, Tree/Simple was about 2× faster and used about 2×
+    less energy than NCCL's automatic choice.
+  tags: [NCCL, Collective communication, GPU energy, NVML]
+  links:
+    - label: Code
+      icon: github
+      url: https://github.com/MehranKeivanimehr/nccl-energy-frontier
+
+- title: "Heterogeneous DDP Lab: Stragglers in Distributed Training"
+  area: "AI infrastructure · Distributed training"
+  description: >-
+    A measurement study of synchronous PyTorch DistributedDataParallel training when one GPU is
+    slower than the others, on a 4-GPU NVLink host. It covers 810 conditions across DDP bucket sizes,
+    calibrated per-rank delays, and NCCL Ring/Tree/Auto with ResNet-50 and ViT-B/16. Delays passed
+    into step time almost one-for-one rather than being amplified, bucket size mattered for ViT but
+    little for ResNet, and forcing NCCL Tree beat NCCL's own choice by 5–10%.
+  tags: [PyTorch DDP, NCCL, Stragglers, Statistics]
+  links:
+    - label: Code
+      icon: github
+      url: https://github.com/MehranKeivanimehr/hetero-ddp-lab
+
+- title: "LocalClinical-Tuner: A Private, Offline Clinical LLM"
+  area: "Scalable and private AI"
+  description: >-
+    A clinical-documentation assistant that runs entirely on local hardware. Qwen2.5-7B is
+    fine-tuned with Unsloth QLoRA and ORPO to summarize encounter notes, write SOAP notes, and
+    extract medical entities, then compressed to a 4.4 GB GGUF file served offline through Ollama.
+    Trained only on synthetic and public data, it raises entity-extraction F1 from 0.63 to 0.83 over
+    the base model. A research project, not for clinical use.
+  tags: [LLM fine-tuning, QLoRA, ORPO, Ollama, Privacy]
+  links:
+    - label: Code
+      icon: github
+      url: https://github.com/MehranKeivanimehr/LocalClinical-Tuner
+    - label: Model on Hugging Face
+      url: https://huggingface.co/MehranK1/LocalClinical-Tuner-7B-GGUF
+
+- title: "ThermalVLA: Thermal-Aware Robot Navigation"
+  area: "Robotics · Edge AI"
+  status: In progress
+  description: >-
+    A vision-language-action policy for open-vocabulary navigation that treats the robot's thermal
+    state as an input. A 7B VLA teacher is distilled into a ~35M-parameter student for a Jetson Orin
+    NX, and a learned gate reads live temperature, power, and clock telemetry to switch between Full,
+    Medium, and Tiny operating modes instead of throttling. LoRA adapters support on-device continual
+    learning. The architecture is built; the full training run is pending.
+  tags: [Vision-language-action, Knowledge distillation, Jetson, LoRA]
+  links: []
+
+- title: "Hopfield Networks and Associative Memory on MNIST"
+  area: "Mathematical modelling"
+  description: >-
+    A reproducible comparison of classical Hebbian Hopfield networks, pseudoinverse associative
+    memory, modern Hopfield (attention-style) retrieval, and nearest-neighbor memory on corrupted
+    MNIST patterns, with bit-flip, salt-and-pepper, and occlusion noise and capacity sweeps.
+    Classical Hopfield recall fails on sparse MNIST images (10% label retrieval), while pseudoinverse
+    and modern Hopfield retrieval recover about 97–98% of corrupted memories.
+  tags: [Hopfield networks, Associative memory, Python]
+  links:
+    - label: Code
+      icon: github
+      url: https://github.com/MehranKeivanimehr/hopfield-2026-mnist
 
 - title: "Backpropagation-Free Binary CNNs for an Opto-Electronic Accelerator"
   area: "Optical computing · Event cameras"
@@ -21,7 +94,7 @@
   links: []
 
 - title: "A Unified Circuit View of Multiphysics Finite Element Analysis"
-  area: "Computational electromagnetics"
+  area: "Mathematical modelling"
   description: >-
     Applied Discrete Exterior Calculus to unify electromagnetics, heat transfer, and structural
     mechanics within circuit-based finite element formulations for multiphysics simulation

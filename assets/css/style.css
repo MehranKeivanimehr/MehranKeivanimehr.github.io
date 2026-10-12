@@ -847,3 +847,16 @@ main.container {
     font-size: 12pt;
   }
 }
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.card-top .card-kicker {
+  margin-bottom: 0;
+}

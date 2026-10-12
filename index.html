@@ -3,8 +3,9 @@ layout: default
 title: About
 description: >-
   Mehran Keivanimehr is a Ph.D. student in Electrical and Computer Engineering at the
-  University of Florida (FOCUS Lab, advised by Dr. Sanjeev Koppal), researching
-  energy-efficient AI systems and optical computing.
+  University of Florida (FOCUS Lab, advised by Dr. Sanjeev Koppal), working on AI
+  infrastructure and energy-efficient AI: GPU communication, distributed training,
+  private on-device LLMs, and robotics.
 ---
 {%- assign author = site.author -%}
 <section class="hero">
@@ -47,9 +48,14 @@ description: >-
     optical computing hardware, and use them to design more energy-efficient learning systems.
   </p>
   <p>
-    Recent projects include <strong>backpropagation-free binary CNNs</strong> for a non-Fourier,
-    event-camera-based opto-electronic convolution accelerator, and a framework that splits CNN inference
-    energy into compute and memory to show where large-kernel networks become memory-bound.
+    Recent projects include <a href="{{ '/projects/' | relative_url }}"><strong>NCCL Energy Frontier</strong></a>,
+    a study of whether the fastest GPU collective-communication settings are also the most energy-efficient;
+    a measurement study of <strong>PyTorch DDP training with a straggling GPU</strong>;
+    <strong>LocalClinical-Tuner</strong>, a fine-tuned 7B clinical language model that runs fully offline on
+    local hardware; and <strong>ThermalVLA</strong>, a thermal-aware navigation policy for robots on a Jetson
+    (in progress). In the FOCUS Lab, I have also built backpropagation-free binary CNNs for an event-camera-based
+    opto-electronic convolution accelerator and a framework that shows where large-kernel networks become
+    memory-bound.
   </p>
   <p>
     Before joining the FOCUS Lab, I worked with Dr. Baoyun Ge in the GEM Lab on Discrete Exterior Calculus
