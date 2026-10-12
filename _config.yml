@@ -25,8 +25,8 @@ author:
   location: Gainesville, Florida, USA
   tagline: Energy-efficient AI systems, from GPUs to optical computing to robots.
   # Shown on the site in a spam-resistant way.
-  email_user: m.keivanimehr
-  email_domain: ufl.edu
+  email_user: mkeivanimehr
+  email_domain: gmail.com
   photo: /assets/img/profile.jpg
   photo_webp: /assets/img/profile.webp
   # Put a PDF in assets/pdf/ and set its path here to show a "Download CV" button.
