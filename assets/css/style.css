@@ -182,7 +182,7 @@ strong {
 
 .site-header {
   position: sticky;
-  top: 0;
+  top: env(safe-area-inset-top, 0px);
   z-index: 50;
   background: color-mix(in srgb, var(--bg) 85%, transparent);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
