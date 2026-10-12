@@ -1,0 +1,79 @@
+# Site settings for Mehran Keivanimehr's personal website.
+# Most content lives in the _data/ folder; see README.md for how to update it.
+
+title: Mehran Keivanimehr
+url: https://mehrankeivanimehr.github.io
+baseurl: ""
+lang: en
+description: >-
+  Mehran Keivanimehr is a Ph.D. student in Electrical and Computer Engineering
+  at the University of Florida researching energy-efficient AI systems, optical
+  computing, and edge learning for robots.
+
+author:
+  name: Mehran Keivanimehr
+  # Other spellings people might search for (used by Google). Example: "Mehran Keivani Mehr"
+  alternate_names: []
+  job_title: Ph.D. Student in Electrical and Computer Engineering
+  # Short version used in the browser tab / Google result title.
+  short_title: Ph.D. Student, University of Florida
+  affiliation: University of Florida
+  affiliation_url: https://www.ufl.edu/
+  lab: FOCUS Lab
+  lab_url: https://focus.ece.ufl.edu/
+  advisor: Dr. Sanjeev Koppal
+  location: Gainesville, Florida, USA
+  tagline: Energy-efficient AI systems, from GPUs to optical computing to robots.
+  # Shown on the site in a spam-resistant way.
+  email_user: m.keivanimehr
+  email_domain: ufl.edu
+  photo: /assets/img/profile.jpg
+  photo_webp: /assets/img/profile.webp
+  # Put a PDF in assets/pdf/ and set its path here to show a "Download CV" button.
+  cv_pdf: ""
+  links:
+    google_scholar: https://scholar.google.com/citations?user=Q7jcLkAAAAAJ&hl=en
+    linkedin: https://www.linkedin.com/in/mehran-keivanimehr-9b6572b0/
+    github: https://github.com/MehranKeivanimehr
+    orcid: ""
+  alumni_of:
+    - name: University of Florida
+      url: https://www.ufl.edu/
+    - name: University of Kashan
+      url: https://www.kashanu.ac.ir/
+  knows_about:
+    - Energy-efficient machine learning
+    - Optical computing
+    - Computational imaging
+    - Event cameras
+    - Edge AI and robot learning
+    - Multiphysics simulation
+    - Power systems
+
+# Paste the code from Google Search Console's "HTML tag" method here (just the content="..." value).
+google_site_verification: ""
+
+og_image: /assets/img/og-image.jpg
+
+nav:
+  - title: About
+    url: /
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: Teaching
+    url: /teaching/
+  - title: News
+    url: /news/
+  - title: CV
+    url: /cv/
+
+permalink: pretty
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore

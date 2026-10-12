@@ -1,0 +1,19 @@
+# News items, newest first. "text" supports Markdown, e.g. [link text](https://...).
+
+- date: "2026"
+  text: "Our paper *Towards a non-Fourier event-based opto-electronic convolution accelerator* was published in [Optics Express](https://doi.org/10.1364/OE.584235)."
+
+- date: "May 2025"
+  text: "Completed my M.Sc. in Electrical and Computer Engineering at the University of Florida."
+
+- date: "Nov 2024"
+  text: "Our paper on real-time transient stability evaluation was published in [Processes](https://doi.org/10.3390/pr12112409)."
+
+- date: "Oct 2024"
+  text: "Our paper *A Unified Circuit View of Multiphysics Finite Element Analysis via Discrete Exterior Calculus, Part II* appeared at [IEEE ECCE 2024](https://doi.org/10.1109/ECCE55643.2024.10860837) in Phoenix, AZ."
+
+- date: "Aug 2024"
+  text: "Joined the [FOCUS Lab](https://focus.ece.ufl.edu/) at UF, advised by Dr. Sanjeev Koppal, to work on energy-efficient AI and optical computing."
+
+- date: "Sep 2023"
+  text: "Started my Ph.D. in Electrical and Computer Engineering at the University of Florida."

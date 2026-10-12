@@ -1,0 +1,73 @@
+---
+layout: default
+title: Curriculum Vitae
+permalink: /cv/
+description: >-
+  Curriculum vitae of Mehran Keivanimehr: education at the University of Florida and
+  University of Kashan, research experience, publications, teaching, and skills.
+---
+{%- assign cv = site.data.cv -%}
+{%- if site.author.cv_pdf != "" %}
+<p class="button-row" style="margin-bottom: 40px;">
+  <a class="btn btn-primary" href="{{ site.author.cv_pdf | relative_url }}" target="_blank" rel="noopener">{% include icon.html name="download" %} Download CV (PDF)</a>
+</p>
+{%- endif %}
+
+<section class="cv-section">
+  <h2>Education</h2>
+  {%- for item in cv.education %}
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">{{ item.degree }}</span>
+      <span class="entry-dates">{{ item.dates }}</span>
+    </div>
+    <div class="entry-org">{{ item.school }}</div>
+    {%- if item.details %}<p class="entry-note">{{ item.details }}</p>{% endif %}
+    {%- if item.note %}<p class="entry-note muted">{{ item.note }}</p>{% endif %}
+  </div>
+  {%- endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Research and teaching experience</h2>
+  {%- for item in cv.experience %}
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">{{ item.role }}</span>
+      <span class="entry-dates">{{ item.dates }}</span>
+    </div>
+    <div class="entry-org">
+      {%- if item.org_url %}<a href="{{ item.org_url }}" target="_blank" rel="noopener">{{ item.org }}</a>{% else %}{{ item.org }}{% endif -%}
+    </div>
+    <ul>
+      {%- for bullet in item.bullets %}
+      <li>{{ bullet }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+  {%- endfor %}
+</section>
+
+<section class="cv-section">
+  <h2>Publications</h2>
+  <ul class="pub-list">
+    {%- for pub in site.data.publications %}
+    {% include publication.html pub=pub %}
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Skills</h2>
+  <dl class="skills-grid">
+    {%- for group in cv.skills %}
+    <dt>{{ group.area }}</dt>
+    <dd>{{ group.items }}</dd>
+    {%- endfor %}
+  </dl>
+</section>
+
+<section class="cv-section">
+  <h2>References</h2>
+  <p>Available upon request.</p>
+</section>

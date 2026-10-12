@@ -1,0 +1,57 @@
+# Publications, newest first. Fields:
+#   title, authors, venue, year, type (Journal | Conference | Book chapter | Preprint)
+#   status (optional, e.g. "Under review"), doi (optional), url / pdf / code (optional)
+#   selected: true  -> also shown on the home page
+
+- title: "EdgeTrain: Thermal-Adaptive Continual Learning for Energy-Constrained Mobile Robots"
+  authors: "M. Keivanimehr, L. Burns, S. J. Koppal"
+  venue: "Conference on Robot Learning (CoRL)"
+  year: 2026
+  type: Conference
+  status: Under review
+  selected: true
+
+- title: "Towards a non-Fourier event-based opto-electronic convolution accelerator"
+  authors: "H. Kirkland, T. H. Le, P. Taylor, M. Keivanimehr, I. J. Sledge, S. J. Koppal"
+  venue: "Optics Express"
+  year: 2026
+  type: Journal
+  doi: 10.1364/OE.584235
+  selected: true
+
+- title: "A Hybrid Method Based on Corrected Kinetic Energy and Statistical Calculation for Real-Time Transient Stability Evaluation"
+  authors: "M. Keivanimehr, M. Zareian Jahromi, H. R. Chamorro, M. R. M. Khademi, E. Yaghoubi, E. Yaghoubi, V. K. Sood"
+  venue: "Processes, vol. 12, no. 11, art. 2409"
+  year: 2024
+  type: Journal
+  doi: 10.3390/pr12112409
+  selected: true
+
+- title: "A Unified Circuit View of Multiphysics Finite Element Analysis via Discrete Exterior Calculus Part II: 2D Dynamic Fields"
+  authors: "M. Keivanimehr, B. Ge"
+  venue: "IEEE Energy Conversion Congress and Exposition (ECCE), Phoenix, AZ, USA, pp. 5596–5603"
+  year: 2024
+  type: Conference
+  doi: 10.1109/ECCE55643.2024.10860837
+  selected: true
+
+- title: "Towards electromobility: challenges in integrating electric vehicles and charging stations on power systems"
+  authors: "P. Pariz, M. Keivanimehr"
+  venue: "Advanced Technologies in Electric Vehicles, Chapter 23, Elsevier"
+  year: 2024
+  type: Book chapter
+  doi: 10.1016/B978-0-443-18999-9.00020-X
+
+- title: "Load Shedding Frequency Management of Microgrids Using Hierarchical Fuzzy Control"
+  authors: "M. Keivanimehr, H. R. Chamorro, M. Zareian-Jahromi, F. R. Segundo-Sevilla, J. M. Guerrero, C. Konstantinou"
+  venue: "World Automation Congress (WAC), Taipei, Taiwan, pp. 216–221"
+  year: 2021
+  type: Conference
+  doi: 10.23919/WAC50355.2021.9559468
+
+- title: "Maximum Power Point Tracking of a Network-Connected Photovoltaic System Based on Gravity Search Algorithm and Fuzzy Logic Controller"
+  authors: "H. Mehraban Jahromi, H. Dehghani Tafti, M. Hosseini, A. Jalali, M. Keivanimehr"
+  venue: "Journal of Solar Energy Research Updates, vol. 7, pp. 52–63"
+  year: 2020
+  type: Journal
+  doi: 10.31875/2410-2199.2020.07.6

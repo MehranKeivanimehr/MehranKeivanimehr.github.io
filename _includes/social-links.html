@@ -1,0 +1,14 @@
+{%- assign links = site.author.links -%}
+<a class="js-email" href="#contact" data-user="{{ site.author.email_user }}" data-domain="{{ site.author.email_domain }}" title="Email" aria-label="Email">{% include icon.html name="email" %}</a>
+{%- if links.google_scholar != "" %}
+<a href="{{ links.google_scholar }}" rel="me noopener" target="_blank" title="Google Scholar" aria-label="Google Scholar">{% include icon.html name="google_scholar" %}</a>
+{%- endif %}
+{%- if links.linkedin != "" %}
+<a href="{{ links.linkedin }}" rel="me noopener" target="_blank" title="LinkedIn" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a>
+{%- endif %}
+{%- if links.github != "" %}
+<a href="{{ links.github }}" rel="me noopener" target="_blank" title="GitHub" aria-label="GitHub">{% include icon.html name="github" %}</a>
+{%- endif %}
+{%- if links.orcid != "" %}
+<a href="{{ links.orcid }}" rel="me noopener" target="_blank" title="ORCID" aria-label="ORCID">{% include icon.html name="orcid" %}</a>
+{%- endif %}

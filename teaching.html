@@ -1,0 +1,32 @@
+---
+layout: default
+title: Teaching
+permalink: /teaching/
+lead: Teaching assistant experience in electrical and computer engineering.
+description: >-
+  Teaching experience of Mehran Keivanimehr as a graduate teaching assistant at the
+  University of Florida and Marquette University.
+---
+{%- assign teaching = site.data.teaching -%}
+<section class="cv-section">
+  <h2>Positions</h2>
+  {%- for position in teaching.positions %}
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">{{ position.role }}</span>
+      <span class="entry-dates">{{ position.dates }}</span>
+    </div>
+    <div class="entry-org">{{ position.institution }} · {{ position.location }}</div>
+  </div>
+  {%- endfor %}
+  <p class="entry-note">{{ teaching.responsibilities }}</p>
+</section>
+
+<section class="cv-section">
+  <h2>Courses supported</h2>
+  <ul class="chips">
+    {%- for course in teaching.courses %}
+    <li>{{ course }}</li>
+    {%- endfor %}
+  </ul>
+</section>

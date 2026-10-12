@@ -1,0 +1,119 @@
+{%- assign author = site.author -%}
+{%- if page.url == "/" -%}
+  {%- assign page_title = author.name | append: " | " | append: author.short_title -%}
+{%- else -%}
+  {%- assign page_title = page.title | append: " | " | append: author.name -%}
+{%- endif -%}
+{%- assign page_description = page.description | default: site.description | strip_newlines | strip -%}
+{%- assign canonical = page.url | replace: "index.html", "" | prepend: site.baseurl | prepend: site.url -%}
+{%- assign og_image = site.og_image | prepend: site.baseurl | prepend: site.url -%}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="author" content="{{ author.name }}">
+  <link rel="canonical" href="{{ canonical }}">
+  {%- if site.google_site_verification != "" %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+  {%- endif %}
+
+  <meta property="og:type" content="{% if page.url == '/' %}profile{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ author.name }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:alt" content="Photo of {{ author.name }}">
+  {%- if page.url == "/" %}
+  <meta property="profile:first_name" content="Mehran">
+  <meta property="profile:last_name" content="Keivanimehr">
+  {%- endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description | escape }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="48x48">
+  <link rel="icon" type="image/png" href="{{ '/assets/img/icon-512.png' | relative_url }}" sizes="512x512">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") document.documentElement.setAttribute("data-theme", saved);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
+  {%- if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "{{ site.url }}/#person",
+        "name": {{ author.name | jsonify }},
+        {%- if author.alternate_names.size > 0 %}
+        "alternateName": {{ author.alternate_names | jsonify }},
+        {%- endif %}
+        "givenName": "Mehran",
+        "familyName": "Keivanimehr",
+        "url": "{{ site.url }}/",
+        "image": "{{ author.photo | prepend: site.url }}",
+        "jobTitle": {{ author.job_title | jsonify }},
+        "description": {{ site.description | strip_newlines | strip | jsonify }},
+        "worksFor": {
+          "@type": "CollegeOrUniversity",
+          "name": {{ author.affiliation | jsonify }},
+          "url": {{ author.affiliation_url | jsonify }}
+        },
+        "alumniOf": [
+          {%- for school in author.alumni_of %}
+          { "@type": "CollegeOrUniversity", "name": {{ school.name | jsonify }}, "url": {{ school.url | jsonify }} }{% unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        ],
+        "homeLocation": { "@type": "Place", "name": {{ author.location | jsonify }} },
+        "knowsAbout": {{ author.knows_about | jsonify }},
+        "sameAs": [
+          {%- assign first = true -%}
+          {%- for link in author.links -%}
+            {%- if link[1] != "" -%}
+              {%- unless first %},{% endunless %}
+          {{ link[1] | jsonify }}
+              {%- assign first = false -%}
+            {%- endif -%}
+          {%- endfor %}
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}/",
+        "name": {{ author.name | jsonify }},
+        "inLanguage": "en",
+        "publisher": { "@id": "{{ site.url }}/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "{{ site.url }}/#profilepage",
+        "url": "{{ site.url }}/",
+        "name": {{ page_title | jsonify }},
+        "isPartOf": { "@id": "{{ site.url }}/#website" },
+        "mainEntity": { "@id": "{{ site.url }}/#person" },
+        "dateModified": "{{ site.time | date_to_xmlschema }}"
+      }
+    ]
+  }
+  </script>
+  {%- endif %}
+</head>

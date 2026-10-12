@@ -1,0 +1,56 @@
+# Research projects. Fields: title, area, description, tags, links (label + url).
+
+- title: "EdgeTrain: Thermal-Adaptive Learning for Mobile Robots"
+  area: "Edge AI · Robotics"
+  description: >-
+    A thermal-adaptive learning system for mobile robots that jointly controls GPU frequency,
+    batch size, and algorithm choice. It reduces peak temperature under thermal stress while
+    preserving accuracy through deterministic training invariance.
+  tags: [Continual learning, GPU frequency control, Thermal management]
+  links:
+    - label: "Paper (under review)"
+      url: ""
+
+- title: "Backpropagation-Free Binary CNNs for an Opto-Electronic Accelerator"
+  area: "Optical computing · Event cameras"
+  description: >-
+    Layer-wise binary CNNs for a non-Fourier, event-camera-based opto-electronic convolution
+    accelerator, trained without backpropagation using simulated annealing and a custom
+    layer-wise loss to optimize the optical kernels.
+  tags: [Binary neural networks, Simulated annealing, Event cameras]
+  links:
+    - label: "Optics Express 2026"
+      url: https://doi.org/10.1364/OE.584235
+
+- title: "Where Does the Energy Go? Compute vs. Memory in Large-Kernel CNNs"
+  area: "Energy-efficient AI"
+  description: >-
+    A measurement-based framework that decomposes CNN inference energy into compute and memory.
+    It identifies the cache thresholds where large-kernel networks become memory-bound, exposing
+    energy gaps that operation-count metrics miss, validated across optical computing substrates.
+  tags: [Energy modeling, GPUs, Large-kernel CNNs]
+  links: []
+
+- title: "A Unified Circuit View of Multiphysics Finite Element Analysis"
+  area: "Computational electromagnetics"
+  description: >-
+    Applied Discrete Exterior Calculus to unify electromagnetics, heat transfer, and structural
+    mechanics within circuit-based finite element formulations for multiphysics simulation
+    (GEM Lab, with Dr. Baoyun Ge).
+  tags: [Discrete exterior calculus, Finite elements, Multiphysics]
+  links:
+    - label: "IEEE ECCE 2024"
+      url: https://doi.org/10.1109/ECCE55643.2024.10860837
+
+- title: "Stability and Control of Power Systems and Microgrids"
+  area: "Power systems"
+  description: >-
+    Earlier research on real-time transient stability evaluation, hierarchical fuzzy control for
+    microgrid load shedding, maximum power point tracking for grid-connected photovoltaics, and
+    integrating electric vehicles and charging stations into power systems.
+  tags: [Transient stability, Fuzzy control, Microgrids, Electric vehicles]
+  links:
+    - label: "Processes 2024"
+      url: https://doi.org/10.3390/pr12112409
+    - label: "WAC 2021"
+      url: https://doi.org/10.23919/WAC50355.2021.9559468
