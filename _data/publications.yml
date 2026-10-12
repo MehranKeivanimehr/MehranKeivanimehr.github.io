@@ -3,14 +3,6 @@
 #   status (optional, e.g. "Under review"), doi (optional), url / pdf / code (optional)
 #   selected: true  -> also shown on the home page
 
-- title: "EdgeTrain: Thermal-Adaptive Continual Learning for Energy-Constrained Mobile Robots"
-  authors: "M. Keivanimehr, L. Burns, S. J. Koppal"
-  venue: "Conference on Robot Learning (CoRL)"
-  year: 2026
-  type: Conference
-  status: Under review
-  selected: true
-
 - title: "Towards a non-Fourier event-based opto-electronic convolution accelerator"
   authors: "H. Kirkland, T. H. Le, P. Taylor, M. Keivanimehr, I. J. Sledge, S. J. Koppal"
   venue: "Optics Express"

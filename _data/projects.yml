@@ -1,16 +1,5 @@
 # Research projects. Fields: title, area, description, tags, links (label + url).
 
-- title: "EdgeTrain: Thermal-Adaptive Learning for Mobile Robots"
-  area: "Edge AI · Robotics"
-  description: >-
-    A thermal-adaptive learning system for mobile robots that jointly controls GPU frequency,
-    batch size, and algorithm choice. It reduces peak temperature under thermal stress while
-    preserving accuracy through deterministic training invariance.
-  tags: [Continual learning, GPU frequency control, Thermal management]
-  links:
-    - label: "Paper (under review)"
-      url: ""
-
 - title: "Backpropagation-Free Binary CNNs for an Opto-Electronic Accelerator"
   area: "Optical computing · Event cameras"
   description: >-

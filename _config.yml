@@ -7,8 +7,8 @@ baseurl: ""
 lang: en
 description: >-
   Mehran Keivanimehr is a Ph.D. student in Electrical and Computer Engineering
-  at the University of Florida researching energy-efficient AI systems, optical
-  computing, and edge learning for robots.
+  at the University of Florida researching energy-efficient AI systems and optical
+  computing.
 
 author:
   name: Mehran Keivanimehr
@@ -23,7 +23,7 @@ author:
   lab_url: https://focus.ece.ufl.edu/
   advisor: Dr. Sanjeev Koppal
   location: Gainesville, Florida, USA
-  tagline: Energy-efficient AI systems, from GPUs to optical computing to robots.
+  tagline: Energy-efficient AI systems, from modern GPUs to optical computing.
   # Shown on the site in a spam-resistant way.
   email_user: mkeivanimehr
   email_domain: gmail.com
@@ -46,7 +46,6 @@ author:
     - Optical computing
     - Computational imaging
     - Event cameras
-    - Edge AI and robot learning
     - Multiphysics simulation
     - Power systems
 

@@ -23,7 +23,6 @@ experience:
     bullets:
       - "Developed layer-wise binary CNNs on a non-Fourier opto-electronic accelerator without backpropagation, using simulated annealing and a custom layer-wise loss to optimize kernels for event-camera-based optical convolution."
       - "Built a measurement-based framework that decomposes CNN inference energy into compute and memory; identified cache thresholds where large-kernel networks become memory-bound, exposing energy gaps that operation-count metrics miss, validated across optical computing substrates."
-      - "Designed EdgeTrain, a thermal-adaptive learning system for mobile robots that jointly controls GPU frequency, batch size, and algorithm choice; reduced peak temperature under thermal stress while preserving accuracy via deterministic training invariance."
   - role: Graduate Research Assistant
     org: GEM Lab, University of Florida
     dates: Aug 2023 – Aug 2024
@@ -43,4 +42,4 @@ skills:
   - area: Engineering software
     items: COMSOL, FreeFEM, Altium Designer
   - area: Research areas
-    items: Energy-efficient deep learning, optical computing, event cameras, edge AI, multiphysics simulation, power systems
+    items: Energy-efficient deep learning, optical computing, event cameras, multiphysics simulation, power systems
