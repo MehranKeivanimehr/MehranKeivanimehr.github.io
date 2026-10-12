@@ -1,0 +1,22 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+lead: Journal articles, conference papers, and book chapters, newest first.
+description: >-
+  Publications by Mehran Keivanimehr on energy-efficient AI, optical computing,
+  multiphysics simulation, and power systems.
+---
+<p class="muted">
+  See also my <a href="{{ site.author.links.google_scholar }}" target="_blank" rel="me noopener">Google Scholar profile</a>.
+</p>
+
+{%- assign by_year = site.data.publications | group_by: "year" -%}
+{%- for group in by_year %}
+<h2 class="pub-year">{{ group.name }}</h2>
+<ul class="pub-list">
+  {%- for pub in group.items %}
+  {% include publication.html pub=pub %}
+  {%- endfor %}
+</ul>
+{%- endfor %}

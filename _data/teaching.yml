@@ -1,0 +1,19 @@
+positions:
+  - role: Graduate Teaching Assistant
+    institution: Department of Electrical and Computer Engineering, University of Florida
+    location: Gainesville, FL
+    dates: Aug 2023 – Jan 2024
+  - role: Graduate Teaching Assistant
+    institution: Department of Electrical and Computer Engineering, Marquette University
+    location: Milwaukee, WI
+    dates: Aug 2022 – May 2023
+
+responsibilities: Coursework support, grading, and student mentoring.
+
+courses:
+  - Pattern Recognition
+  - Introduction to Artificial Intelligence
+  - Introduction to Electromagnetics
+  - Introduction to Electrical and Computer Engineering
+  - Analog Electronics
+  - Digital Systems

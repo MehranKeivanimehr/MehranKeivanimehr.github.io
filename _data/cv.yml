@@ -1,0 +1,45 @@
+education:
+  - degree: Ph.D. in Electrical and Computer Engineering
+    school: University of Florida, Gainesville, FL, USA
+    dates: Sep 2023 – Present
+    details: "Advisor: Dr. Sanjeev Koppal · GPA: 3.92/4.0"
+    note: "Dissertation: Analytical modeling of energy efficiency in AI systems, focusing on large-kernel deep learning on modern GPUs and optical computing paradigms."
+  - degree: M.Sc. in Electrical and Computer Engineering
+    school: University of Florida, Gainesville, FL, USA
+    dates: Sep 2023 – May 2025
+    details: "Advisor: Dr. Sanjeev Koppal · GPA: 3.92/4.0"
+    note: "Coursework: Computational Photography, Image Processing and Computer Vision, Advanced Machine Learning, Medical Image Processing, Electromagnetic Field Applications, Introduction to Neural Interfaces and Systems."
+  - degree: B.Sc. in Electrical and Computer Engineering
+    school: University of Kashan, Kashan, Iran
+    dates: 2014 – 2018
+    details: "Major: Electronics and Power · GPA: 3.67/4.0"
+    note: "Ranked 6th out of 120 students in the 2014 class."
+
+experience:
+  - role: Graduate Research Assistant
+    org: FOCUS Lab, University of Florida
+    org_url: https://focus.ece.ufl.edu/
+    dates: Aug 2024 – May 2025
+    bullets:
+      - "Developed layer-wise binary CNNs on a non-Fourier opto-electronic accelerator without backpropagation, using simulated annealing and a custom layer-wise loss to optimize kernels for event-camera-based optical convolution."
+      - "Built a measurement-based framework that decomposes CNN inference energy into compute and memory; identified cache thresholds where large-kernel networks become memory-bound, exposing energy gaps that operation-count metrics miss, validated across optical computing substrates."
+  - role: Graduate Research Assistant
+    org: GEM Lab, University of Florida
+    dates: Aug 2023 – Aug 2024
+    bullets:
+      - "Applied Discrete Exterior Calculus to unify electromagnetics, heat transfer, and structural mechanics within circuit-based finite element formulations for multiphysics simulation, supervised by Dr. Baoyun Ge."
+  - role: Graduate Teaching Assistant
+    org: University of Florida and Marquette University
+    dates: Aug 2022 – Jan 2024
+    bullets:
+      - "Supported courses in Pattern Recognition, Introduction to AI, Introduction to Electromagnetics, Introduction to ECE, Analog Electronics, and Digital Systems: coursework support, grading, and student mentoring."
+
+skills:
+  - area: Programming
+    items: Python, MATLAB, C/C++
+  - area: Machine learning
+    items: PyTorch, Keras
+  - area: Engineering software
+    items: COMSOL, FreeFEM, Altium Designer
+  - area: Research areas
+    items: AI infrastructure, efficient and energy-efficient AI, scalable and private AI, robotics and datacenters, optimization in systems, mathematical modelling
