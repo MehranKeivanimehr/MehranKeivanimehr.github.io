@@ -1,5 +1,8 @@
 # News items, newest first. "text" supports Markdown, e.g. [link text](https://...).
 
+- date: "Oct 2026"
+  text: "Launched [Learn LLMs](https://mehrankeivanimehr.github.io/learn-llms/), an interactive, game-like website that teaches how large language models work with tiny, real models that run in your browser."
+
 - date: "2026"
   text: "Our paper *Towards a non-Fourier event-based opto-electronic convolution accelerator* was published in [Optics Express](https://doi.org/10.1364/OE.584235)."
 

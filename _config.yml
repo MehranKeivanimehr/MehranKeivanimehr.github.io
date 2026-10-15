@@ -54,6 +54,11 @@ google_site_verification: ""
 
 og_image: /assets/img/og-image.jpg
 
+# Other sites published under this address (separate repositories). Listed in sitemap.xml
+# so search engines find them.
+extra_sitemap_urls:
+  - https://mehrankeivanimehr.github.io/learn-llms/
+
 nav:
   - title: About
     url: /

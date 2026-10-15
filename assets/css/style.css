@@ -860,3 +860,13 @@ main.container {
 .card-top .card-kicker {
   margin-bottom: 0;
 }
+
+.project-grid > .card-featured {
+  grid-column: 1 / -1;
+  background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--border));
+}
+
+.card-featured p {
+  color: var(--text);
+}
