@@ -10,6 +10,15 @@ positions:
 
 responsibilities: Coursework support, grading, and student mentoring.
 
+resources:
+  - title: Learn LLMs
+    url: https://mehrankeivanimehr.github.io/learn-llms/
+    description: >-
+      An interactive website I built that teaches how large language models work. Learners
+      play through eight levels, from next-token prediction and tokens to attention and the
+      transformer block, by typing commands and watching tiny, real models react. Free, and it
+      runs entirely in the browser.
+
 courses:
   - Pattern Recognition
   - Introduction to Artificial Intelligence

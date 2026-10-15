@@ -12,4 +12,9 @@ sitemap: false
   </url>
   {%- endif %}
 {%- endfor %}
+{%- for extra in site.extra_sitemap_urls %}
+  <url>
+    <loc>{{ extra }}</loc>
+  </url>
+{%- endfor %}
 </urlset>

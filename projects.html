@@ -2,15 +2,15 @@
 layout: default
 title: Projects
 permalink: /projects/
-lead: Research and engineering projects in AI infrastructure, efficient and private AI, robotics, and mathematical modelling.
+lead: Research, engineering, and teaching projects in AI infrastructure, efficient and private AI, robotics, LLM education, and mathematical modelling.
 description: >-
-  Projects by Mehran Keivanimehr: NCCL energy characterization, straggler-aware
-  distributed training, a private offline clinical LLM, thermal-aware robot navigation,
-  and Hopfield associative memory.
+  Projects by Mehran Keivanimehr: Learn LLMs (an interactive website that teaches how
+  language models work), NCCL energy characterization, straggler-aware distributed
+  training, a private offline clinical LLM, and thermal-aware robot navigation.
 ---
 <div class="project-grid">
   {%- for project in site.data.projects %}
-  <article class="card">
+  <article class="card{% if project.featured %} card-featured{% endif %}">
     <div class="card-top">
       <span class="card-kicker">{{ project.area }}</span>
       {%- if project.status %}

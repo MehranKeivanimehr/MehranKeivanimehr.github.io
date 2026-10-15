@@ -1,6 +1,27 @@
 # Projects, shown in this order on /projects/.
 # Fields: title, area, status (optional, e.g. "In progress"), description, tags,
 #         links (label + url; add `icon: github` for code links).
+#         featured: true -> the card spans the full width.
+
+- title: "Learn LLMs: How Language Models Work, by Playing With Them"
+  area: "Teaching · Interactive learning"
+  featured: true
+  description: >-
+    An interactive, game-like website that teaches how large language models work. Eight
+    arcade-style levels cover next-token prediction, tokens, embeddings, sampling, attention,
+    word order and heads, the transformer block, and the generation loop. In each one you type
+    commands, watch a tiny real model react, and solve a goal. Levels open with short slides and a
+    "Show me" demo and end with an optional exam and code challenge, and the final level runs a
+    small transformer trained for the site. Everything runs in the browser, with no accounts,
+    cookies, or tracking.
+  tags: [LLM education, Transformers, Interactive visualization, Astro, React, TypeScript]
+  links:
+    - label: Open Learn LLMs
+      icon: arrow
+      url: https://mehrankeivanimehr.github.io/learn-llms/
+    - label: Code
+      icon: github
+      url: https://github.com/MehranKeivanimehr/learn-llms
 
 - title: "NCCL Energy Frontier"
   area: "AI infrastructure · GPU energy"
