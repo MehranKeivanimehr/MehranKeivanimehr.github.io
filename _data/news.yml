@@ -1,6 +1,9 @@
 # News items, newest first. "text" supports Markdown, e.g. [link text](https://...).
 
 - date: "Oct 2026"
+  text: "Released [Multi-GPU Systems Lab](https://github.com/MehranKeivanimehr/multi-gpu-systems-lab), a study of what makes multi-GPU training and LLM serving benchmarks trustworthy, and [Patients, Not Slices](https://github.com/MehranKeivanimehr/Brain-Tumor-Detection), a leakage-controlled, calibrated brain-tumor detection study on 519 MRI patients."
+
+- date: "Oct 2026"
   text: "Launched [Learn LLMs](https://mehrankeivanimehr.github.io/learn-llms/), an interactive, game-like website that teaches how large language models work with tiny, real models that run in your browser."
 
 - date: "2026"
