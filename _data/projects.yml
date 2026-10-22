@@ -23,6 +23,37 @@
       icon: github
       url: https://github.com/MehranKeivanimehr/learn-llms
 
+- title: "Multi-GPU Systems Lab: Trustworthy Distributed Training and LLM Serving Benchmarks"
+  area: "AI infrastructure · Distributed systems"
+  description: >-
+    A study of what evidence makes a multi-GPU benchmark trustworthy, across RTX A6000, TITAN
+    RTX / GTX 1080 Ti, and A100 systems. It covers DDP, FSDP2, and ZeRO training, tensor- versus
+    data-parallel LLM serving, and numerical controls that can be replayed on a CPU without a GPU.
+    On A6000s, data-parallel serving beat tensor-parallel serving by 33% for Qwen 1.5B and 15% for
+    Llama 8B at the same request budget, and sharded optimizer updates were checked against the
+    consumed gradient in 16 training contexts on 1 to 6 GPUs.
+  tags: [PyTorch DDP, FSDP2, ZeRO, LLM serving, Reproducibility]
+  links:
+    - label: Code
+      icon: github
+      url: https://github.com/MehranKeivanimehr/multi-gpu-systems-lab
+
+- title: "Patients, Not Slices: Honest Brain-Tumor Detection on MRI"
+  area: "Medical imaging · Trustworthy ML"
+  description: >-
+    A rebuild of an earlier brain-tumor MRI classifier that starts by showing its own 90% accuracy
+    was not real: 18 of 21 test images were copies of training images. On 519 glioblastoma
+    patients (UPENN-GBM), it shows that slice-level splits inflate all 16 models tested, reaches
+    AUC 0.965 on unseen patients, derives exact leave-one-patient-out for ridge and ELM heads
+    (170× faster than refitting), and builds patient-level conformal prediction sets with 90%
+    coverage, while showing where that guarantee breaks: on new scanners and under a
+    Kaggle-style shortcut.
+  tags: [Medical imaging, Data leakage, Conformal prediction, Leave-one-patient-out]
+  links:
+    - label: Code
+      icon: github
+      url: https://github.com/MehranKeivanimehr/Brain-Tumor-Detection
+
 - title: "NCCL Energy Frontier"
   area: "AI infrastructure · GPU energy"
   description: >-
