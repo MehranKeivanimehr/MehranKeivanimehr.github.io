@@ -19,8 +19,9 @@ author:
   short_title: Ph.D. Student, University of Florida
   affiliation: University of Florida
   affiliation_url: https://www.ufl.edu/
-  lab: FOCUS Lab
-  lab_url: https://focus.ece.ufl.edu/
+  # Lab shown next to the university in the page header; leave empty to hide it.
+  lab: ""
+  lab_url: ""
   advisor: Dr. Sanjeev Koppal
   location: Gainesville, Florida, USA
   tagline: Efficient, scalable AI infrastructure, from GPU clusters to robots.

@@ -3,8 +3,7 @@ layout: default
 title: About
 description: >-
   Mehran Keivanimehr is a Ph.D. student in Electrical and Computer Engineering at the
-  University of Florida (FOCUS Lab, advised by Dr. Sanjeev Koppal), working on AI
-  infrastructure and energy-efficient AI: GPU communication, distributed training,
+  University of Florida, working on AI infrastructure and energy-efficient AI: GPU communication, distributed training,
   private on-device LLMs, and robotics.
 ---
 {%- assign author = site.author -%}
@@ -13,7 +12,7 @@ description: >-
     <h1>{{ author.name }}</h1>
     <p class="hero-role">{{ author.job_title }}</p>
     <div class="hero-meta">
-      <span><a href="{{ author.lab_url }}" target="_blank" rel="noopener">{{ author.lab }}</a>&nbsp;·&nbsp;<a href="{{ author.affiliation_url }}" target="_blank" rel="noopener">{{ author.affiliation }}</a></span>
+      <span>{% if author.lab != "" %}<a href="{{ author.lab_url }}" target="_blank" rel="noopener">{{ author.lab }}</a>&nbsp;·&nbsp;{% endif %}<a href="{{ author.affiliation_url }}" target="_blank" rel="noopener">{{ author.affiliation }}</a></span>
       <span>{% include icon.html name="location" %} {{ author.location }}</span>
     </div>
     <p class="tagline">{{ author.tagline }}</p>
@@ -41,8 +40,8 @@ description: >-
   <div class="section-head"><h2>About</h2></div>
   <p>
     I am a Ph.D. student in Electrical and Computer Engineering at the
-    <a href="https://www.ufl.edu/" target="_blank" rel="noopener">University of Florida</a>, where I work in the
-    <a href="https://focus.ece.ufl.edu/" target="_blank" rel="noopener">FOCUS Lab</a> with Dr. Sanjeev Koppal.
+    <a href="https://www.ufl.edu/" target="_blank" rel="noopener">University of Florida</a>, where I work with
+    Dr. Sanjeev Koppal.
     My research is on the <strong>energy efficiency of AI systems</strong>: I build analytical and measurement-based
     models of where energy goes in deep learning, especially large-kernel networks on modern GPUs and on
     optical computing hardware, and use them to design more energy-efficient learning systems.
@@ -56,15 +55,12 @@ description: >-
     <strong>LocalClinical-Tuner</strong>, a fine-tuned 7B clinical language model that runs fully offline on
     local hardware; <strong>Patients, Not Slices</strong>, a leakage-controlled brain-tumor detection study on
     MRI with patient-level conformal guarantees; and <strong>ThermalVLA</strong>, a thermal-aware navigation
-    policy for robots on a Jetson (in progress). In the FOCUS Lab, I have also built backpropagation-free binary CNNs for an event-camera-based
+    policy for robots on a Jetson (in progress). I have also built backpropagation-free binary CNNs for an event-camera-based
     opto-electronic convolution accelerator and a framework that shows where large-kernel networks become
     memory-bound.
   </p>
   <p>
-    Before joining the FOCUS Lab, I worked with Dr. Baoyun Ge in the GEM Lab on Discrete Exterior Calculus
-    formulations that unify electromagnetics, heat transfer, and structural mechanics for multiphysics
-    finite element simulation. My earlier research was in power systems: real-time transient stability,
-    microgrid frequency control, and integrating electric vehicles into the grid. I received my M.Sc. in
+    I received my M.Sc. in
     Electrical and Computer Engineering from the University of Florida in 2025 and my B.Sc. from the
     University of Kashan, Iran.
   </p>
